@@ -68,6 +68,9 @@ body{
     margin-left: 20px;
     white-space: nowrap ;
 }
+.myname, ,.title{
+    font-size: 30px;
+}
 .headname{
     max-height: 50px;
 }

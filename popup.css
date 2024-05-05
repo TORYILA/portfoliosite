@@ -1,0 +1,32 @@
+.resume-popup {
+    display: none;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #7c7878a9;
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+  }
+
+  .resume-popup h2 {
+    margin-top: 0;
+    color: #2c3e50;
+  }
+  .resume-popup .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+
+  .resume-popup .close:hover,
+  .resume-popup .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+.close{
+    cursor: pointer;
+}

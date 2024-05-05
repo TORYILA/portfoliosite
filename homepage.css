@@ -1,0 +1,283 @@
+body{
+    margin: 0;
+    height: 880px;
+    font-family: "arvo", sans-serif;
+}
+.header{
+    display: flex;
+    font-family: "arvo,"sans-serif;
+    justify-content: space-between;
+    background-color:  rgb(226, 160, 17);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 70px;
+    z-index: 2;
+    border-bottom: solid 1px black;
+}
+.name {
+    font-size: 35px;
+    color:black;
+    margin-top: 10px; 
+    white-space: nowrap;
+    
+    margin-left: 50px;
+}
+.title{
+    font-size: 35px;
+}
+
+.menu{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 10px;
+    margin-right: 50px;
+    align-items: end;
+}
+.menu a{
+    color: white;
+    font-size: 12px;
+    cursor: pointer;
+    margin-bottom: 0;
+    font-family: "roboto", sans-serif;
+    margin-right: 10px;
+}
+
+.text:hover{
+    text-decoration: underline;
+}
+.myprofilepic{
+    width: 300px;
+    border-radius: 100%;
+    margin-left: 20px;
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
+}
+.infocard{
+    position: relative;
+    top: 50px;
+    height:90%;
+    margin-top: 20px;
+    display: flex;
+    height: 90%;
+    align-items: center;
+    background: linear-gradient( #49a171 10%, #b6c7c1  90%);
+}
+.infotext{
+    margin-left: 20px;
+    white-space: nowrap ;
+}
+.headname{
+    max-height: 50px;
+}
+.menu-icon{
+    display:none;
+    height: 30px;
+    align-self: center;
+}
+.but1{
+    background-color:  rgb(226, 160, 17);
+    color: black;
+    border: none;
+    width: 120px;
+    height: 40px;
+    border-radius: 60px;
+    font-size: 15px;
+    cursor: pointer;
+    position: relative;
+    font-family: "arvo", sans-serif;
+}
+.infotext p, button{
+    font-family: "roboto", sans-serif;
+}
+.name2{
+    display: none;
+}
+.connecticon{
+    width: 10px;
+    margin-left: 5px;
+    color: white;
+}
+.footer{
+    background-color: rgb(139, 136, 136);
+    height: 330px;
+    position: relative;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    border-top: solid 1px rgb(226, 160, 17);
+    display: grid;
+    font-family: "arvo", sans-serif;
+    align-items: center;
+    
+}
+.backtotop{
+    background-color:  rgb(226, 160, 17);
+    color: white;
+    border: none;
+    width: 120px;
+    height: 25px;
+    font-size: 15px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+.contacticons{
+    display: grid;
+    margin-left: 10px;
+    margin-top: 10px;
+    align-items: center;
+    border: solid 1px black;
+    width: 50%;
+    margin-top: 30px;
+    grid-template-columns: 1fr 1fr;
+}
+.lastbutton{
+    margin-top: 60px;
+}
+.myname{
+    font-size: 35px;
+    color:black;
+    font-family: "arvo", sans-serif;
+}
+.line{
+    width: 100%;
+    height: 1px;
+    background-color: black;
+}
+.contacticons img{
+    width: 25px;
+}
+.contxt{
+    position: absolute;
+    top: 20px;
+    margin:0 ;
+    left: 6%;
+    background: rgb(139, 136, 136)
+}
+.mail, .phone{
+    display: flex;
+    align-content: center;
+    font-family: "roboto", sans-serif; 
+    margin-left: 10px;
+
+}
+.connectbuttondis{
+display: none;
+max-height: 0;
+cursor: pointer;
+position: absolute;
+}
+.buttdisplay{
+max-height: 20px;
+display: block;
+max-height: 20px;
+margin-top: 10px;
+
+}
+
+.tooltip,
+.tooltip1,
+.tooltip2{
+background-color: rgb(247, 226, 182);
+padding-top: 4px;
+padding-bottom: 4px;
+padding-left: 8px;
+padding-right: 8px;
+position: absolute;
+border-radius: 4px;
+color: rgb(83, 80, 80);
+opacity: 0;
+transition: opacity 0.1s;
+white-space: nowrap;
+}
+
+.buttdisplay img:hover + .tooltip,
+.buttdisplay img:hover + .tooltip1,
+.buttdisplay img:hover + .tooltip2 {
+opacity: 1;
+}
+
+.connectbuttondis img{
+    margin-left: 7px;
+    opacity: 0.5;
+}
+
+.tooltip1{
+margin-left: 37px;
+}
+.tooltip2{
+margin-left: 60px;
+}
+
+
+.displaynum{
+display: inline-block;
+font-size: 24px;
+color: #333;
+visibility: visible;
+animation: animateText 0.5s linear ;
+text-wrap: nowrap;
+font-size: 18px;
+}
+
+
+
+@media screen and (max-width: 600px) {
+   
+    .menu  {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        width: 50%;
+        background: #000;
+        right: 0;
+        text-align: center;
+        top: 70px;
+        height: 20px;
+        max-height:0 ;
+        overflow:hidden;
+        transition: max-height 0.5s;
+}
+    
+    .menu-icon{
+        display: block;
+        cursor: pointer;
+    }
+    .show-menu{
+        max-height: 10px;
+        margin: 0;
+        padding: 10px;
+    }
+
+    .infocard{
+    position: relative;
+    top: 50px;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    
+    align-items: center;
+    background: linear-gradient( #49a171 10%, #b6c7c1  90%);
+    }
+    .infotext{
+        margin-left: 20px;
+        white-space: nowrap ;
+        margin-left: 30px;
+        text-align: center;
+    }
+    
+    .myname{margin: 0;}
+    .but1{
+        margin-bottom: 20px;
+    }
+    .contacticons{
+        display: flex;
+        flex-direction: column;
+    }
+    .myprofilepic{
+        margin-top: 20px;
+    }
+
+    }
+    

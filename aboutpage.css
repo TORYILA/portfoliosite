@@ -136,6 +136,18 @@ margin-left:35%;
         margin: 0;
         padding: 10px;
     }
+    .aboutcard{
+    background: linear-gradient( #49a171 10%, #b6c7c1  90%);
+    height: 700px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    position: relative;
+    left: 0;
+    right: 0;
+}
     .about{
         width: 400px;
         font-size: 13px;
